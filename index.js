@@ -12,8 +12,14 @@ function onControlsClick(event) {
     }
     const currentSituation = refs.controls.querySelector('.controls__item--active')
     if (currentSituation) {
-        currentSituation.classList.remove('controls__item--active')
+        currentSituation.classList.remove('controls__item--active');
+        const pane = searchElementHash(currentSituation)
+        pane.classList.remove('pane--active')
     }
     event.target.classList.add('controls__item--active')
-    document.querySelector(`${event.target.hash}`).classList.add('pane--active')
+    const pane = searchElementHash(event.target)
+    pane.classList.add('pane--active')
+}
+function searchElementHash(currentItem) {
+    return document.querySelector(`${currentItem.hash}`)
 }
