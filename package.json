@@ -1,0 +1,23 @@
+{
+  "name": "workshops-tab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Potyomko/workshops-tab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Potyomko/workshops-tab/issues"
+  },
+  "homepage": "https://github.com/Potyomko/workshops-tab#readme",
+  "dependencies": {
+    "parcel": "^2.8.3"
+  }
+}
